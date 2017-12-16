@@ -230,10 +230,8 @@ class shotSlicerClass(QMainWindow, shotSlicer_UIs.Ui_cgf_shotSlicer):
         print 'ARGS:\nSCENE:', scene, '\nPYFILE:', pyfile, '\nSHOT SELECTED:', shot_selected, '\nMODE:', mode
         self.mayapy_pro.start(mayapy, args)
 
-
     def finish(self):
         print 'Background finished'
-
 
     def readOut(self):
         out = str(self.mayapy_pro.readAll()).strip()
